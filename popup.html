@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark Duplicate Cleaner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bookmark Duplicate Cleaner</h1>
+
+    <button id="scanBtn" class="btn btn-primary">Scan for Duplicates</button>
+
+    <div id="status" class="status"></div>
+
+    <div id="results" class="results"></div>
+
+    <div id="actions" class="actions" style="display: none;">
+      <button id="deleteBtn" class="btn btn-danger">Delete Selected Duplicates</button>
+      <button id="cancelBtn" class="btn btn-secondary">Cancel</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

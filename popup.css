@@ -1,0 +1,228 @@
+body {
+  width: 280px;
+  min-height: fit-content;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  color: #1d1d1f;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin: 0 0 8px 0;
+  color: #1d1d1f;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin: 24px 0 12px 0;
+  color: #1d1d1f;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin: 20px 0 12px 0;
+  color: #1d1d1f;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #007aff 0%, #0051d5 100%);
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(180deg, #0066d9 0%, #0040a8 100%);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 122, 255, 0.2);
+}
+
+.btn-danger {
+  background: linear-gradient(180deg, #ff3b30 0%, #d91b11 100%);
+  color: white;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.25);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(180deg, #e62e24 0%, #c01509 100%);
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-danger:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 59, 48, 0.2);
+}
+
+.btn-secondary {
+  background: #f5f5f7;
+  color: #1d1d1f;
+  flex: 1;
+  margin-left: 10px;
+  border: 1px solid #d2d2d7;
+}
+
+.btn-secondary:hover {
+  background: #e8e8ed;
+  border-color: #c7c7cc;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  background: #dcdce0;
+}
+
+.status {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  display: none;
+  letter-spacing: -0.1px;
+  line-height: 1.5;
+}
+
+.status:not(:empty) {
+  display: block;
+}
+
+.status.success {
+  background-color: #d1f2eb;
+  color: #0d6e58;
+  border: 1px solid #a8e6d7;
+}
+
+.status.error {
+  background-color: #ffe5e5;
+  color: #c41e1e;
+  border: 1px solid #ffc7c7;
+}
+
+.status.warning {
+  background-color: #fff8e1;
+  color: #996a00;
+  border: 1px solid #ffe7a3;
+}
+
+.results {
+  margin-top: 20px;
+  max-height: 440px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.results::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.results::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 10px;
+}
+
+.results::-webkit-scrollbar-thumb:hover {
+  background: #b8b8bd;
+}
+
+.duplicate-group {
+  margin-bottom: 16px;
+  border: 1px solid #e5e5ea;
+  border-radius: 12px;
+  padding: 14px;
+  background-color: #fbfbfd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.duplicate-group:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: #d2d2d7;
+}
+
+.url-header {
+  font-weight: 500;
+  color: #007aff;
+  margin-bottom: 12px;
+  word-break: break-all;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  line-height: 1.4;
+}
+
+.bookmark-item {
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  border-left: 3px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.bookmark-item.keep {
+  background-color: #d1f2eb;
+  border-left-color: #34c759;
+}
+
+.bookmark-item.delete {
+  background-color: #ffe5e5;
+  border-left-color: #ff3b30;
+}
+
+.bookmark-item strong {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.bookmark-item small {
+  color: #86868b;
+  font-size: 11px;
+  letter-spacing: -0.05px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}

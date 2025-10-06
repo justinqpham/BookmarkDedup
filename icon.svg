@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#1a73e8"/>
+
+  <!-- Bookmark shape (back) - slightly faded -->
+  <path d="M 72 30 L 90 30 L 90 85 L 81 77 L 72 85 Z" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Bookmark shape (front) -->
+  <path d="M 38 30 L 56 30 L 56 85 L 47 77 L 38 85 Z" fill="#ffffff"/>
+
+  <!-- X mark on back bookmark -->
+  <line x1="76" y1="45" x2="86" y2="55" stroke="#ff4444" stroke-width="3" stroke-linecap="round"/>
+  <line x1="86" y1="45" x2="76" y2="55" stroke="#ff4444" stroke-width="3" stroke-linecap="round"/>
+</svg>
