@@ -101,12 +101,5 @@ magick icon.svg -resize 16x16 icon16.png
 
 ## License
 
-MIT License - feel free to use and modify as needed.
+MIT License
 
-## Author
-
-Created with Claude Code
-
-## Contributing
-
-Issues and pull requests are welcome!
