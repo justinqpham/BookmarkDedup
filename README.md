@@ -104,4 +104,4 @@ magick icon.svg -resize 16x16 icon16.png
 MIT License - feel free to use and modify as needed.
 
 ---
-*Last updated: $(date)*
+*Repository contributors verified*
